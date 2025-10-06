@@ -129,6 +129,8 @@ GameObject:
   m_Component:
   - component: {fileID: 143392306}
   - component: {fileID: 143392305}
+  - component: {fileID: 143392307}
+  - component: {fileID: 143392308}
   m_Layer: 0
   m_Name: Personaje
   m_TagString: Untagged
@@ -206,6 +208,45 @@ Transform:
   m_Children: []
   m_Father: {fileID: 750516121}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &143392307
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143392304}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &143392308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143392304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32e033eef5852c14cb191cf2eec43254, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &322092280
 GameObject:
   m_ObjectHideFlags: 0
