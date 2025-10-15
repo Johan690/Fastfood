@@ -7,45 +7,38 @@ using UnityEngine.InputSystem;
 public class inmover : MonoBehaviour
 {
 
-    Rigidbody2D rg;
+    public Rigidbody2D rg;
 
-    public int speed;
-    public int jumpPower;
+    public float speed;
+    public float jumpPower;
 
-    Vector2 veMove;
+    Vector3 veMove;
 
-    void Start()
+    bool grounded;
+
+    private void Awake()
     {
-        rg = GetComponent<Rigidbody2D>();
+        grounded = true;
     }
 
-    private void FixedUpdate()
-    {
-        rg.linearVelocity = new Vector2(veMove.x * speed, rg.linearVelocity.y);
-    }
 
     void Update()
     {
-        
-    }
-
-    public void Salto(InputAction.CallbackContext value)
-    {
-        if (value.started)
+        veMove = new Vector3(Input.GetAxis("Horizontal")*speed,0,0);
+        GetComponent<Transform>().position += veMove*Time.deltaTime;
+        if (Input.GetKeyDown(KeyCode.Space) && grounded == true)
         {
-            rg.linearVelocity = new Vector2(rg.linearVelocity.x, jumpPower);
+            grounded = false;
+            rg.AddForce(new Vector2(0,jumpPower),ForceMode2D.Impulse);
         }
     }
 
-    public void Movition(InputAction.CallbackContext value)
+    private void OnCollisionEnter2D(Collision2D col)
     {
-        veMove = value.ReadValue<Vector2>();
-        
+        if (col.gameObject.tag == "piso")
+        {
+            grounded = true;
+        }
     }
 
-    void flip()
-    {
-        if (veMove.x < -0.1f) transform.localScale = new Vector3(-1, 1, 1);
-        if (veMove.x > 0.1f) transform.localScale = new Vector3(1, 1, 1);
-    }
 }

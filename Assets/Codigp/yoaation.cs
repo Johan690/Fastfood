@@ -34,29 +34,34 @@ public class yoaation : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
-    public void Selecvel()
+    public void Tutorial()
     {
         SceneManager.LoadScene(1);
     }
 
-    public void Tutorial()
+    public void Selecvel()
     {
         SceneManager.LoadScene(2);
     }
 
-    public void Nivone()
+    public void Control()
     {
         SceneManager.LoadScene(3);
     }
 
-    public void Pausenu()
+    public void Nivone()
     {
         SceneManager.LoadScene(4);
     }
 
-    public void Creditos()
+    public void Pausenu()
     {
         SceneManager.LoadScene(5);
+    }
+
+    public void Creditos()
+    {
+        SceneManager.LoadScene(6);
     }
 
 
