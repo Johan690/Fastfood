@@ -29,7 +29,7 @@ public class yoaation : MonoBehaviour
 
 
     // Para cambiar escenas
-    public void Menu()
+    public void Principio()
     {
         SceneManager.LoadScene(0);
     }
