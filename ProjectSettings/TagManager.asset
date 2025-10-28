@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 3
   tags:
   - piso
+  - Comida
+  - Tortilla
+  - Carne
   layers:
   - Default
   - TransparentFX
