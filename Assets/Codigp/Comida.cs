@@ -1,4 +1,6 @@
 using UnityEngine;
+using System;
+using UnityEngine.SceneManagement;
 
 public class Comida : MonoBehaviour
 {
@@ -7,6 +9,8 @@ public class Comida : MonoBehaviour
 
     bool isCarne = false;
     public GameObject CarneSlot;
+
+    public GameObject Canwas;
 
     private void OnCollisionEnter2D(Collision2D col)
     {
@@ -22,6 +26,14 @@ public class Comida : MonoBehaviour
             isCarne = true;
             CarneSlot.SetActive(true);
             Destroy(col.gameObject);
+        }
+
+        if (col.gameObject.CompareTag("Comida"))
+        {
+            if (isTortilla && isCarne)
+            {
+               Canwas.SetActive(true);
+            }
         }
     }
 }
