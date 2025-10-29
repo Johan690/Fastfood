@@ -5395,7 +5395,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 2131277257}
   speed: 9.8
-  jumpPower: 7.95
+  jumpPower: 8.21
 --- !u!212 &2131277259
 SpriteRenderer:
   m_ObjectHideFlags: 0
