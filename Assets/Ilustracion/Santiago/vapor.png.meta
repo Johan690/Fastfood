@@ -115,12 +115,12 @@ TextureImporter:
       name: vapor_0
       rect:
         serializedVersion: 2
-        x: 39
+        x: 29
         y: 94
-        width: 22
-        height: 92
+        width: 195
+        height: 113
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -133,99 +133,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: vapor_1
-      rect:
-        serializedVersion: 2
-        x: 79
-        y: 114
-        width: 17
-        height: 87
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 79619afb42c326f00800000000000000
-      internalID: 1108514586818582167
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: vapor_2
-      rect:
-        serializedVersion: 2
-        x: 119
-        y: 109
-        width: 12
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5739063a00bafea40800000000000000
-      internalID: 5399722497469879157
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: vapor_3
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 119
-        width: 17
-        height: 82
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0cf2194d7781fea60800000000000000
-      internalID: 7705404390400667584
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: vapor_4
-      rect:
-        serializedVersion: 2
-        x: 194
-        y: 124
-        width: 17
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 96d86929f2288f560800000000000000
-      internalID: 7347765932889378153
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 478026302c614d645bb0a8c5c926e3c4
     internalID: 0
     vertices: []
     indices: 
