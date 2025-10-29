@@ -27,7 +27,7 @@ public class Reloj : MonoBehaviour
             if (restante < 1)
             {
                 Canlas.SetActive(true);
-                enMarcha = true;
+                enMarcha = false;
             }
             int tempMin = Mathf.FloorToInt(restante / 60);
             int tempSeg = Mathf.FloorToInt(restante % 60);
