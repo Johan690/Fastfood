@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: eb12e12531346cc498e74840fe91252c
+guid: 43b69a7e78977bb4598cb833900e3181
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4871443106280806325
-    second: inventario1_0
+      213: -5874346911320842694
+    second: UI inventario alimentos 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: inventario1_0
+      name: UI inventario alimentos 1_0
       rect:
         serializedVersion: 2
-        x: 55
-        y: 55
-        width: 2774
-        height: 4706
+        x: 27
+        y: 0
+        width: 2885
+        height: 2885
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5b79465f1b7da9340800000000000000
-      internalID: 4871443106280806325
+      spriteID: a3ede479b902a7ea0800000000000000
+      internalID: -5874346911320842694
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      inventario1_0: 4871443106280806325
+      UI inventario alimentos 1_0: -5874346911320842694
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
