@@ -4,7 +4,6 @@ using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
 public class Camoso : MonoBehaviour
 {
-
     public Transform target;
     public float velocidadCam;
     public Vector3 positionOffset;

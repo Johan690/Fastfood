@@ -1,8 +1,8 @@
-﻿using System;
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Movertwo : MonoBehaviour
+public class Movthree : MonoBehaviour
 {
 
     public float moveSpeed;
@@ -47,17 +47,17 @@ public class Movertwo : MonoBehaviour
 
         if (Input.GetAxisRaw("Horizontal") == 1)
         {
-            animator.SetBool("move", true);
-            GetComponent<SpriteRenderer>().flipX = true;
+            animator.SetTrigger("move");
+            GetComponent<SpriteRenderer>().flipX = false;
         }
         else if (Input.GetAxisRaw("Horizontal") == -1)
         {
-            animator.SetBool("move", true);
-            GetComponent<SpriteRenderer>().flipX = false;
+            animator.SetTrigger("move");
+            GetComponent<SpriteRenderer>().flipX = true;
         }
         else
         {
-            animator.SetBool("move", false);
+            animator.SetTrigger("move");
         }
     }
 }

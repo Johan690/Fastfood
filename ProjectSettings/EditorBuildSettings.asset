@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: Assets/Unty/Scenes/Principio.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Unty/Scenes/Tutorial.unity
-    guid: a3a497302bac5cc4e8ee839f352cbdc6
+    path: Assets/Unty/Scenes/Newtuto.unity
+    guid: 871b733b8bb53e94898e05232b78012d
   - enabled: 1
     path: Assets/Unty/Scenes/Selecvel.unity
     guid: 4325f7c84ea3682448a51865c30b0877

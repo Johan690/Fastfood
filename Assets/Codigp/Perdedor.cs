@@ -9,7 +9,9 @@ public class Perdedor : MonoBehaviour
     public AudioSource mex;
     public Animator reloj;
     public Movertwo mocve;
-    
+
+    public GameObject Canlas;
+
     private void Awake()
     {
         seg = 60;
@@ -31,8 +33,9 @@ public class Perdedor : MonoBehaviour
         }
         else
         {
+            Canlas.SetActive(true);
             mex.Stop();
-            reloj.SetTrigger("F");
+            reloj.SetTrigger("Pau");
             mocve.estaJUgando = false;
         }
 

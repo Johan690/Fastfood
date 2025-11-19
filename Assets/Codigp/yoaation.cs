@@ -34,7 +34,7 @@ public class yoaation : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
-    public void Tutorial()
+    public void Newtuto()
     {
         SceneManager.LoadScene(1);
     }
