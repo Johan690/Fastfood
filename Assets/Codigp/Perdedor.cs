@@ -7,6 +7,8 @@ public class Perdedor : MonoBehaviour
     public Text cuenta;
     int seg;
     public AudioSource mex;
+    public Animator reloj;
+    public Movertwo mocve;
     
     private void Awake()
     {
@@ -30,7 +32,10 @@ public class Perdedor : MonoBehaviour
         else
         {
             mex.Stop();
+            reloj.SetTrigger("F");
+            mocve.estaJUgando = false;
         }
+
     }
 
 }

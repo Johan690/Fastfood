@@ -4,80 +4,60 @@ using UnityEngine.InputSystem;
 
 public class Movertwo : MonoBehaviour
 {
-    [Header("Components")]
-    [SerializeField] private Rigidbody2D rb;
 
-    [Header("Movement Settings")]
-    [SerializeField] private float speed;
-    [SerializeField] private float jumpPower;
+    public float moveSpeed;
+    public Vector3 moveDirection;
 
-    private Vector2 moveInput;
-    private bool isGrounded;
+    public bool grounded = true;
+    public float jumpForce;
 
-    // Para el nuevo Input System
-    private PlayerInput playerInput;
+    public Animator animator;
 
-    private void Awake()
+    public bool estaJUgando = true;
+
+    void Update()
     {
-
-
-        playerInput = GetComponent<PlayerInput>();
-        isGrounded = true;
-    }
-
-    // Para el nuevo Input System
-    public void OnMove(InputAction.CallbackContext context)
-    {
-        moveInput = context.ReadValue<Vector2>();
-    }
-
-    public void OnJump(InputAction.CallbackContext context)
-    {
-        if (context.performed && isGrounded)
+        if (estaJUgando)
         {
-            Jump();
+            Movimiento();
         }
     }
 
-    private void FixedUpdate()
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        MovePlayer();
-    }
-
-    private void MovePlayer()
-    {
-        // Movimiento más consistente usando Rigidbody
-        Vector2 targetVelocity = new Vector2(moveInput.x * speed, rb.linearVelocity.y);
-        rb.linearVelocity = targetVelocity;
-
-        // Alternativa para movimiento más suave:
-        // rb.velocity = Vector2.Lerp(rb.velocity, targetVelocity, acceleration * Time.fixedDeltaTime);
-    }
-
-    private void Jump()
-    {
-        isGrounded = false;
-        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpPower);
-
-        // Alternativa con AddForce:
-        // rb.AddForce(new Vector2(0f, jumpPower), ForceMode2D.Impulse);
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("piso"))
+        if (collision.gameObject.tag == "piso")
         {
-            isGrounded = true;
+            grounded = true;
         }
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
+    void Movimiento()
     {
-        if (collision.gameObject.CompareTag("piso"))
+        moveDirection = new Vector3(Input.GetAxisRaw("Horizontal") * moveSpeed, 0, 0);
+        transform.Translate(moveDirection * Time.deltaTime);
+
+        if (Input.GetAxisRaw("Vertical") == 1 || Input.GetKeyDown(KeyCode.Space))
         {
-            isGrounded = false;
+            if (grounded == true)
+            {
+                grounded = false;
+                GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
+            }
         }
+
+        /*if (Input.GetAxisRaw("Horizontal") == 1)
+        {
+            animator.SetBool("move", true);
+            GetComponent<SpriteRenderer>().flipX = true;
+        }
+        else if (Input.GetAxisRaw("Horizontal") == -1)
+        {
+            animator.SetBool("move", true);
+            GetComponent<SpriteRenderer>().flipX = false;
+        }
+        else
+        {
+            animator.SetBool("move", false);
+        }*/
     }
-
-
 }

@@ -12,6 +12,10 @@ public class Comida : MonoBehaviour
 
     public GameObject Canwas;
 
+    public Perdedor loter;
+    public AudioSource mex;
+    public Movertwo mocve;
+
     private void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject.CompareTag("Tortilla"))
@@ -33,6 +37,9 @@ public class Comida : MonoBehaviour
             if (isTortilla && isCarne)
             {
                Canwas.SetActive(true);
+               loter.StopAllCoroutines();
+               mex.Stop();
+               mocve.estaJUgando = false;
             }
         }
     }

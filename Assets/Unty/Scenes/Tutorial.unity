@@ -164,6 +164,7 @@ Transform:
   - {fileID: 238387923}
   - {fileID: 1176001076}
   - {fileID: 360695610}
+  - {fileID: 2144648987}
   - {fileID: 879303565}
   - {fileID: 619979144}
   m_Father: {fileID: 0}
@@ -1538,7 +1539,11 @@ Transform:
   m_GameObject: {fileID: 632328629}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< Updated upstream
   m_LocalPosition: {x: -11.36, y: -14.23, z: 0}
+=======
+  m_LocalPosition: {x: -11.36, y: -14.11, z: 0}
+>>>>>>> Stashed changes
   m_LocalScale: {x: 1.7687504, y: 1.7687504, z: 1.7687504}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1975,7 +1980,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cuenta: {fileID: 1239891126}
+<<<<<<< Updated upstream
   mex: {fileID: 0}
+=======
+  mex: {fileID: 1686437753}
+  reloj: {fileID: 1395401503}
+  mocve: {fileID: 2131277258}
+>>>>>>> Stashed changes
 --- !u!1 &858096386
 GameObject:
   m_ObjectHideFlags: 0
@@ -2300,8 +2311,7 @@ Transform:
   m_LocalPosition: {x: 40.39, y: -16.22, z: 0}
   m_LocalScale: {x: 1.1896733, y: 3.0737722, z: 2.5453846}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2144648987}
+  m_Children: []
   m_Father: {fileID: 5908468}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &879303566
@@ -3364,7 +3374,7 @@ GameObject:
   - component: {fileID: 1395401501}
   - component: {fileID: 1395401503}
   m_Layer: 5
-  m_Name: GameObject
+  m_Name: Watc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3762,7 +3772,11 @@ Transform:
   m_GameObject: {fileID: 1491479275}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< Updated upstream
   m_LocalPosition: {x: 9.85, y: -14.43, z: 0}
+=======
+  m_LocalPosition: {x: 9.85, y: -14.17, z: 0}
+>>>>>>> Stashed changes
   m_LocalScale: {x: 1.7687504, y: 1.7687504, z: 1.7687504}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5291,7 +5305,6 @@ GameObject:
   - component: {fileID: 2131277255}
   - component: {fileID: 2131277260}
   - component: {fileID: 2131277258}
-  - component: {fileID: 2131277252}
   - component: {fileID: 2131277259}
   m_Layer: 5
   m_Name: Prota
@@ -5319,68 +5332,6 @@ RectTransform:
   m_AnchoredPosition: {x: -2.6536, y: -14.76}
   m_SizeDelta: {x: 6008, y: 8252}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2131277252
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2131277250}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 4b1d38f3209640245881b1b0d62707d5, type: 3}
-  m_NotificationBehavior: 2
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents:
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2131277258}
-        m_TargetAssemblyTypeName: Movertwo, Assembly-CSharp
-        m_MethodName: OnJump
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: d9ab2c94-e697-43e7-9b34-4a47eeae0a51
-    m_ActionName: 'muevete/Salto[/Keyboard/space]'
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2131277258}
-        m_TargetAssemblyTypeName: Movertwo, Assembly-CSharp
-        m_MethodName: OnMove
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 8e760150-14be-4c18-b80a-ecd94bb98f62
-    m_ActionName: 'muevete/Movition[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]'
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: muevete
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
 --- !u!222 &2131277255
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5399,7 +5350,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 8818e6d9e53ce0a43991bb4ef4e5e07a, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -5474,9 +5425,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 197a30c95feb4c848815301073cca323, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 2131277257}
-  speed: 9.8
-  jumpPower: 8.21
+  moveSpeed: 21.2
+  moveDirection: {x: 2.81, y: 5.67, z: 0}
+  grounded: 1
+  jumpForce: 14.13
+  animator: {fileID: 0}
+  estaJUgando: 1
 --- !u!212 &2131277259
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5547,6 +5501,9 @@ MonoBehaviour:
   TortillaSlot: {fileID: 722187235}
   CarneSlot: {fileID: 208587468}
   Canwas: {fileID: 1729440097}
+  loter: {fileID: 750516122}
+  mex: {fileID: 1686437753}
+  mocve: {fileID: 2131277258}
 --- !u!1 &2144648986
 GameObject:
   m_ObjectHideFlags: 0
@@ -5574,11 +5531,11 @@ Transform:
   m_GameObject: {fileID: 2144648986}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.67, y: -0.1906, z: 0}
-  m_LocalScale: {x: 1, y: 0.70462817, z: 1}
+  m_LocalPosition: {x: 31.265205, y: -16.80586, z: 0}
+  m_LocalScale: {x: 1.1896733, y: 2.1658664, z: 2.5453846}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 879303565}
+  m_Father: {fileID: 5908468}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2144648988
 BoxCollider2D:
