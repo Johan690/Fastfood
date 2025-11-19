@@ -48,12 +48,12 @@ public class Movertwo : MonoBehaviour
         if (Input.GetAxisRaw("Horizontal") == 1)
         {
             animator.SetBool("move", true);
-            GetComponent<SpriteRenderer>().flipX = true;
+            GetComponent<SpriteRenderer>().flipX = false;
         }
         else if (Input.GetAxisRaw("Horizontal") == -1)
         {
             animator.SetBool("move", true);
-            GetComponent<SpriteRenderer>().flipX = false;
+            GetComponent<SpriteRenderer>().flipX = true;
         }
         else
         {
