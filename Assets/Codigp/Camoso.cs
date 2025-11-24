@@ -1,21 +1,13 @@
-using System;
+
 using UnityEngine;
-using UnityEngine.InputSystem;
-using UnityEngine.UIElements;
+
 public class Camoso : MonoBehaviour
 {
-    public Transform target;
-    public float velocidadCam;
-    public Vector3 positionOffset;
+    public Transform p;
 
-    private void LateUpdate()
+    private void Update() 
     {
-        Vector3 posicionDeseada = target.position + positionOffset;
-
-        Vector3 posicionSuave = Vector3.Lerp(transform.position, posicionDeseada, velocidadCam);
-
-        transform.position = posicionSuave;
-
+        GetComponent<Transform>().position = new Vector3(p.position.x, p.position.y, -10);
     }
 
 
