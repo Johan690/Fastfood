@@ -28,6 +28,7 @@ public class Movertwo : MonoBehaviour
         if (collision.gameObject.tag == "piso")
         {
             grounded = true;
+            animator.SetBool("ove", false);
         }
     }
 
@@ -42,8 +43,10 @@ public class Movertwo : MonoBehaviour
             {
                 grounded = false;
                 GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
+                animator.SetBool("ove", true);
             }
         }
+
 
         if (Input.GetAxisRaw("Horizontal") == 1)
         {
