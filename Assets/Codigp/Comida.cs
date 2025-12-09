@@ -23,6 +23,7 @@ public class Comida : MonoBehaviour
 
     public Perdedor loter;
     public AudioSource mex;
+    public AudioSource w;
     public Movertwo mocve;
 
     private void OnCollisionEnter2D(Collision2D col)
@@ -70,6 +71,7 @@ public class Comida : MonoBehaviour
                loter.StopAllCoroutines();
                mex.Stop();
                mocve.estaJUgando = false;
+               w.Play();
             }
             else if (isMasa && isQueso && isPeperoni)
             {
@@ -77,6 +79,7 @@ public class Comida : MonoBehaviour
                 loter.StopAllCoroutines();
                 mex.Stop();
                 mocve.estaJUgando = false;
+                w.Play();
             }
         }
     }
