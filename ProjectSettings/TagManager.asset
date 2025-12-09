@@ -8,6 +8,9 @@ TagManager:
   - Comida
   - Tortilla
   - Carne
+  - Masa
+  - Queso
+  - Peperoni
   layers:
   - Default
   - TransparentFX
