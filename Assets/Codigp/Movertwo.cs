@@ -13,6 +13,8 @@ public class Movertwo : MonoBehaviour
 
     public Animator animator;
 
+    public AudioSource Jup;
+
     public bool estaJUgando = true;
 
     void Update()
@@ -29,6 +31,7 @@ public class Movertwo : MonoBehaviour
         {
             grounded = true;
             animator.SetBool("ove", false);
+            Jup.Stop();
         }
     }
 
@@ -44,6 +47,7 @@ public class Movertwo : MonoBehaviour
                 grounded = false;
                 GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
                 animator.SetBool("ove", true);
+                Jup.Play();
             }
         }
 
